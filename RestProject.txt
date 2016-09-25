@@ -1,0 +1,19 @@
+creating a new REST project from the File menu by choosing the "New REST Project" option in the File menu:
+2.Specify the following  API URL in the Service Endpoint Field:
+3.In the "Parameters" table, you can see that SoapUI has automatically extracted the different 
+query-arguments from the path.
+4.Click the "Add to TestCase" button at the top left, which prompts for the 
+names of an initial TestSuite and TestCase,
+5.Now double-click the resource icon in the navigator and change the Resource Path to
+
+add an actual assertion to validate the content of the respons "/maps/api/geocode/json":
+ in the right response part of the window now select the "Outline" view and right-click on the first "e" item. 
+Then in the popup menu, select the "Add Assertion -> for Count" option, which automatically generates 
+an JSONPath Count assertion for you 
+
+Run the TestCase with the green arrow at the top left which will result in the above output in the Log at the bottom; 
+your functional test passed just fine!
+
+Finally, if you are running SoapUI Pro, you can create a simple HTML report. Click the "Create Report" 
+button in the menu at the top and select "JUnit-Syle HTML Report" in the opened dialog as follows:
+Press OK and SoapUI will generate the report for and open it in the system browser:
